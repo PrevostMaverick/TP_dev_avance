@@ -81,7 +81,7 @@ pnpm add -D jest supertest
 ###  Windows : 
 
 
-### **Étape 1️ : Suppression des dépendances**
+### Étape 1 : Suppression des dépendances**
 Dans PowerShell ou Git Bash, exécute :
 ```powershell
 rm -r -fo node_modules pnpm-lock.yaml
@@ -92,7 +92,7 @@ rmdir /s /q node_modules pnpm-lock.yaml
 ```
 
 
-### **Étape 2️ : Installation de NVM pour Windows**
+### Étape 2 : Installation de NVM pour Windows**
 Windows ne supporte pas `nvm` natif. À la place, installe **nvm-windows** :
 
 1. Télécharge `nvm-windows` ici 👉 [https://github.com/coreybutler/nvm-windows/releases](https://github.com/coreybutler/nvm-windows/releases)
@@ -100,34 +100,34 @@ Windows ne supporte pas `nvm` natif. À la place, installe **nvm-windows** :
 3. Redémarre ton terminal après l'installation.
 
 
-### **Étape 3️ : Installation de Node.js avec NVM**
+### Étape 3 : Installation de Node.js avec NVM**
 Une fois `nvm-windows` installé, exécute dans **PowerShell** :
 ```powershell
 nvm install 22
 nvm use 22
 nvm alias default 22
 ```
-🔹 **Vérification** :  
+ **Vérification** :  
 ```powershell
 node -v
 ```
 Cela doit afficher `v22.x.x`.
 
 
-### **Étape 4️ : Installation de PNPM**
+### Étape 4 : Installation de PNPM**
 Active **Corepack** (inclus avec Node.js) pour utiliser `pnpm` :
 ```powershell
 corepack enable pnpm
 corepack use pnpm@8
 ```
-🔹 **Vérification** :
+ **Vérification** :
 ```powershell
 pnpm -v
 ```
 Cela doit afficher `8.x.x`.
 
 
-### **Étape 5️ : Installation d'EventEmitter**
+### Étape 5 : Installation d'EventEmitter**
 ```powershell
 npm install eventemitter2
 npm install @nestjs/event-emitter@^3.0.0
@@ -135,14 +135,14 @@ npm install @nestjs/event-emitter@^3.0.0
 
 
 
-### **Étape 6️ : Installation des dépendances pour TypeORM et SQLite**
+### Étape 6 : Installation des dépendances pour TypeORM et SQLite**
 ```powershell
 npm install @nestjs/typeorm@^11.0.0 sqlite3@^5.1.7 typeorm@^0.3.20
 ```
 
 
 
-### **Étape 7️ : Installation des dépendances pour les tests**
+### Étape 7 : Installation des dépendances pour les tests**
 ```powershell
 npm install --save-dev @nestjs/testing jest @types/jest ts-jest
 pnpm add -D jest supertest
@@ -155,24 +155,24 @@ pnpm add -D jest supertest
 
 Placez-vous à la racine du projet et utilisez les commandes suivantes pour exécuter chaque composant :  
 
-### 1️. Compilation de la source CSS (libs/ui)  
+### 1. Compilation de la source CSS (libs/ui)  
 ```bash
 pnpm run libs:ui:build
 ```
 
-### 2️. Lancement du Serveur  
+### 2. Lancement du Serveur  
 ```bash
 pnpm apps:server:dev
 ```
 
-### 3️. Lancement du Client  
+### 3. Lancement du Client  
 ⚠️ **Le serveur doit être lancé en premier !**  
 ```bash
 pnpm apps:client:dev
 ```
 👉 Le client sera accessible via [http://localhost:3001](http://localhost:3001).  
 
-### 4️. Lancement de la Documentation Swagger  
+### 4. Lancement de la Documentation Swagger  
 ```bash
 pnpm docs:swagger:start
 ```
@@ -253,7 +253,7 @@ L’application suit une **architecture modulaire MVC** :
 
 ---
 
-### 📊 3. Récupération du Classement  
+### 3. Récupération du Classement  
  **Route** : `GET /api/ranking`  
  **Réponse** :  
 ```json
