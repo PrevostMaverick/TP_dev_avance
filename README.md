@@ -9,7 +9,7 @@ Realtime Elo Ranker est une application web qui permet de simuler des matchs ent
 
 - **Nom** : PREVOST  
 - **Prénom** : Maverick  
-- **GitHub** : [PrevostMaverick](https://github.com/PrevostMaverick)  
+- **GitHub** : [PrevostMaverick](https://github.com/PrevostMaverick/TP_dev_avance)  
 
 ---
 
